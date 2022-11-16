@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0;
+  position: relative;
+  margin-bottom: 82px;
+}
+
+.header-start {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 21px;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #737373;
+}
+
+.header-nav-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: -150px;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 793px;
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  flex: none;
+  max-width: 509px;
+}
+
+.hero-desc{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  max-width: 376px;
+  margin-bottom: 35px;
+}
+
+.hero-button{
+  background: #FFA62B;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  align-items: center;
+  border: none;
+  padding: 10px 36px;
+  margin-right: 10px;
+  margin-bottom: 90px;
+}
+
+.hero-link{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #00A0C1;
+  border: 2px solid  #00A0C1;
+  border-radius: 37px;
+  padding: 10px 36px;
+  text-decoration: none;
+}
+.hero-end-list{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  list-style: none;
+  padding-left: 0;
+  gap: 30px;
+  bottom: -30px;
+}
+.hero-end-item{
+  padding: 39px 0 35px 40px;
+  width: 328px;
+  height: 210px;
+  background-color: #fff;
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+}
+.hero-end__img{
+  width: 47px;
+  height: 41px;
+}
+
+.hero-end-title{
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  min-width: 213px;
+}
+
+.hero-end-desc{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 218px;
+}
+
+/****************** Hero Styles end ****************/
+
+/****************** Main Styles start ****************/
+.statistic-wrapper{
+  margin-top: 112px;
+  padding: 80px 0;
+  text-align: center;
+  background-color: #FAFAFA;
+}
+.statistic-title{
+  margin: 0 auto 0  auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.statistic-desc{
+  margin: 10px auto 50px auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 511px;
+}
+.statistic-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 38px;
+}
+.statistic-item{
+  padding: 32px 0  30px 0;
+  width: 230px;
+  height: 209px;
+  background-color: #fff;
+}
+
+.statistic-item__img{
+  width: 48px;
+  height: 44px;
+}
+.statistic-item-count{
+  margin: 11px 0 10px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.statistic-item-desc{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+/****************  Statistic section end ******************/
+
+/****************  Practice section end ******************/
+.practice-wrapper{
+  padding: 125px 0 101px 0;
+  text-align: center;
+  background-color: #FAFAFA;
+}
+.practice-title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.practice-desc{
+  margin: 10px auto 50px auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 470px;
+}
+.practice-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 40px;
+}
+.practice-item{
+  width: 230px;
+  height: 341px;
+  background-color: #fff;
+}
+
+.practice-item-count{
+  margin: 30px 0 0 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  width: 130px;
+  text-align: left;
+}
+
+.practice-item-desc{
+  margin: 15px 41px 0 29px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 160px;
+  text-align: left;
+}
+.practice-item__img{
+  margin-top: 30px;
+  width: 230px;
+  height: 138px;
+}
+/****************  Practice section end ******************/
+
+/****************** Main Styles end ****************/
+
+
